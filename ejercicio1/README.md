@@ -18,8 +18,57 @@ Diseñe un diagrama de clases para un sistema de red social. El sistema debe per
 - Representa los comentarios realizados por los usuarios en las publicaciones, con atributos como texto y fecha. Ten en cuenta que un usuario podrá realizar comentarios sobre las publicaciones.
 - Se debe de tener en cuenta los seguidores entre usuarios. Es decir, dos usuarios serán amigos si uno u otro se sigue.
 
-#
+## Diagrama <a name="index2"></a>
 
 <img src="diagram/ejercicio1-maxi.png">
+
+## Pseudocódigo <a name="index3"></a>
+
+Clase Usuario
+```code
+Propiedades:
+    private String usuNombre
+    private String usuCorreo
+    private List<Usuario> amigos
+    private List<Usuario> seguidos
+    private List<Usuario> seguidores
+    private Perfil perfil
+    private List<Publicacion>
+Métodos:
+    getters y setters
+
+```
+
+Clase Publicacion
+```code
+Propiedades:
+    private String contenido
+    private Date pubFecha
+    private int cantMeGusta
+    private List<Comentario> comentarios
+Métodos:
+    getters y setters
+    
+```
+
+Clase Perfil
+```code
+Propiedades:
+    private String biografia
+    private String fotoPerfil
+Métodos:
+    getters y setters
+    
+```
+
+Clase Comentario
+```code
+Propiedades:
+    private String texto
+    private Date comFecha
+Métodos:
+    getters y setters
+    
+```
 
 </div>
